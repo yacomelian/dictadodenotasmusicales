@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dictado de Notas Musicales</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css?v=7">
+    <script src="js/default.js?v=7"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dictado de Notas Musicales</h1>
+        <div class="form-group">
+            <label class="label" for="numero-notas">Indica el n&uacute;mero de notas a dictar</label>
+            <input id="numero-notas" class="input" type="number" min="1" max="99" value="10">
+            <div class="btn-group-plus">
+                
+                <button id="btn-disminuir" class="btn btn-disminuir"><i class="fas fa-minus"></i></button>
+                <button id="btn-aumentar" class="btn btn-aumentar"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="label" for="tiempo-notas">Tiempo entre notas</label>
+            <input id="tiempo-notas" class="input" type="number" min="0.5" max="15" value="3.0">
+            <div class="btn-group-plus">
+                
+                <button id="btn-disminuir-tiempo" class="btn btn-disminuir"><i class="fas fa-minus"></i></button>
+                <button id="btn-aumentar-tiempo" class="btn btn-aumentar"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="btn-group">
+                <button id="btn-iniciar" class="btn btn-iniciar"><i class="fas fa-dice"></i>Iniciar dictado</button>
+            </div>
+        </div>
+        <div id="audioPlayer"></div>
+        <div class="btn-group">
+            <button id="btn-dictar" class="btn btn-dictar"><i class="fas fa-play"></i>Reproducir</button>
+            <button id="btn-mostrar-ocultar" class="btn btn-mostrar-ocultar"><i class="fas fa-play"></i>Mostrar Notas</button>
+            <button id="btn-descargar" class="btn btn-descargar"><i class="fas fa-download"></i>Descargar Dictado</button>
+        </div>
+        <div id="resultado"></div>
+        <div id="pentagrama">
+            <div class="clave-sol"></div>
+            <div class="pentagrama-container">
+                <div class="pentagrama-linea"></div>
+                <div class="pentagrama-linea"></div>
+                <div class="pentagrama-linea"></div>
+                <div class="pentagrama-linea"></div>
+                <div class="pentagrama-linea"></div>
+                <div class="notas-container"></div>
+              </div>
+              
+        </div>
+    </div>
+</body>
+</html>

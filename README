@@ -1,0 +1,9 @@
+# Dictado de notas musicales
+
+Un juego de programación para motivar a las personas más pequeñas a ver como programando se dan soluciones.
+
+Una primera implementación en Python, que luego pasamos a una página estática.
+
+Quedan cosas por hacer, como colocar las notas en su sitio, y que se reproduzcan los nombres de las notas y sus sonidos. 
+
+ 

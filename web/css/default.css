@@ -1,0 +1,252 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f6f6f6;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #2196f3;
+    font-size: 7vw;
+    margin-top: 0;
+    margin-bottom: 3vh;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    font-size: 5vw;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.btn-group-plus {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.input {
+    margin-bottom: 2vh;
+    padding: 2vw;
+    width: 94%;
+    text-align: center;
+    font-size: 7vw;
+    font-weight: bold;
+    color: #2196f3;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    font-size: 3.5vw;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.btn:not(:last-child) {
+    margin-bottom: 2vh;
+}
+
+.btn-iniciar {
+    background-color: #2196f3;
+    color: #fff;
+    width: 48%;
+}
+
+.btn-disminuir,
+.btn-aumentar {
+    background-color: #f44336;
+    color: #fff;
+    width: 48%;
+    height: 25%;
+}
+
+.btn-aumentar {
+    background-color: #4caf50;
+}
+
+.btn-mostrar-ocultar {
+    background-color: #ff9800;
+    color: #fff;
+    display: inline-block;
+}
+
+.btn-descargar {
+    background-color: #607d8b;
+    color: #fff;
+    display: none;
+}
+
+.fas {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#resultado {
+    margin-top: 3vh;
+}
+
+#resultado p {
+    display: none;
+    font-family: "Arial", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resultado p {
+    display: none;
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn-mostrar-ocultar,
+#btn-dictar,
+#btn-descargar {
+    margin-top: 10px;
+    display: None;
+    height: 20%;
+}
+
+
+#btn-mostrar-ocultar,
+#btn-dictar,
+#btn-descargar {
+    margin-top: 2vh;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .btn-group,
+    .btn-group-plus {
+        flex-wrap: wrap;
+    }
+
+    .input {
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .btn {
+        width: 48%;
+    }
+
+    .btn:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+}
+
+.pentagrama-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .pentagrama-linea {
+    width: calc(100% - 40px); /* Se resta 40px para dejar espacio a los márgenes laterales de 20px */
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 20px; /* Se agrega un margen izquierdo de 20px */
+  }
+  
+  .pentagrama-linea:nth-child(1) {
+    top: 10px;
+  }
+  
+  .pentagrama-linea:nth-child(2) {
+    top: 30px;
+  }
+  
+  .pentagrama-linea:nth-child(3) {
+    top: 50px;
+  }
+  
+  .pentagrama-linea:nth-child(4) {
+    top: 70px;
+  }
+  
+  .pentagrama-linea:nth-child(5) {
+    top: 90px;
+  }
+  
+  .notas-container {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px; /* Se agregan márgenes laterales de 20px */
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .nota {
+    width: 20px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .nota-label {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .clave-sol {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 20px;
+  }
+  
